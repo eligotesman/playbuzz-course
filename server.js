@@ -7,9 +7,7 @@ app.get('/health-check', (req,res)=> {
     res.status(200).json({status:"It's alive 222"})
 });
 
-app.use(express.static('./public')); //test
-var x=1;
-var y=2;
+app.use(express.static('./public'));
 
 const router = express.Router();
 router.use(bodyParser.json());
